@@ -1,0 +1,12 @@
+<h1>Authors#create</h1>
+<p>Find me in app/views/authors/create.html.erb</p>
+
+<%= form_tag "/author" do %>
+
+  Name: <%= text_field_tag "name", @author.name %><br>
+  Email: <%= text_field_tag "email", @author.email %>
+  Phone Number: <%= text_field_tag "phone_number", @author.phone_number %>
+
+  <%= submit_tag "Create Author" %>
+
+<% end %> 
